@@ -72,6 +72,11 @@ Después de aprobar una nueva feature en `prototypes`, documentar el proceso com
 
 Mantener `proceso.md` actualizado con cada nueva feature para un registro cronológico.
 
+## Interacción con la IA
+
+- La IA debe seguir las instrucciones directamente sin explicaciones paso a paso sobre el proceso de desarrollo. Generar código, modificaciones o acciones de inmediato para optimizar el uso de créditos.
+- Solo responder con texto cuando se le haga una pregunta explícita. De lo contrario, proceder con la tarea asignada silenciosamente.
+
 ## Buenas Prácticas Generales
 
 - Siempre iniciar desarrollo en `Sandbox`.
