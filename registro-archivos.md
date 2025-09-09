@@ -18,6 +18,7 @@ Este documento registra las descripciones de cada archivo en el proyecto, incluy
 | base-datos.md | docs/ | Instructivo para manejo de bases de datos. | puertos.md, proceso-creativo.md | [Fecha] |
 | proceso-creativo.md | docs/ | Describe el proceso visual y creativo de desarrollo. | sandbox.md, instrucciones-globales.md | [Fecha] |
 | registro-archivos.md | docs/ | Registro de archivos y dependencias. | Todos los archivos del proyecto | [Fecha] |
+| roles-ia.md | docs/ | Define los roles que la IA debe asumir en diferentes situaciones. | instrucciones-globales.md, proceso-creativo.md, seguridad.md | 2025-09-09 |
 
 ## Instrucciones de Uso
 
