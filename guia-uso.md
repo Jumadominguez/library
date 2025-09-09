@@ -7,6 +7,7 @@
 - `registro-archivos.md` lista dependencias para navegación rápida.
 - `proceso-creativo.md` guía el desarrollo visual antes de código.
 - `base-datos.md` cubre conexiones y arquitectura DB.
+- `seguridad.md` establece protocolos de seguridad para datos sensibles.
 Esta guía te ayuda a entender y utilizar los documentos disponibles para iniciar cualquier proyecto de manera ordenada y eficiente. Sigue el flujo recomendado para maximizar el enfoque de Vibe Coding, que prioriza la experimentación, iteración y documentación.
 
 ## Documentos Clave
@@ -22,7 +23,7 @@ Esta guía te ayuda a entender y utilizar los documentos disponibles para inicia
 - **cuestionario-inicial.md**: Cuestionario detallado con preguntas jerárquicas para recopilar información esencial antes de configurar el proyecto. Completa esto para dar instrucciones precisas a la IA.
 
 - **github-instrucciones.md**: Guía para uso eficiente de Git y GitHub, con sistema de commits y branches robusto para checkpoints y reversiones.
-- **base-datos.md**: Instructivo para manejo de bases de datos, conexiones y arquitectura evolutiva.
+- **seguridad.md**: Guía exhaustiva de seguridad informática para prevenir vulnerabilidades en desarrollo.
 
 ## Flujo Recomendado para Iniciar un Proyecto
 

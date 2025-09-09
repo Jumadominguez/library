@@ -81,3 +81,4 @@ Mantener `proceso.md` actualizado con cada nueva feature para un registro cronol
 - Revisar y limpiar `Sandbox/Temps/` semanalmente.
 - Registrar descripciones y dependencias de archivos en `registro-archivos.md`.
 - Gestionar bases de datos según `base-datos.md` para conexiones seguras y arquitectura evolutiva.
+- Implementar seguridad según `seguridad.md` para prevenir vulnerabilidades en datos sensibles.
