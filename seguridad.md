@@ -1,6 +1,6 @@
 # Guía de Seguridad Informática para Desarrollo
 
-Este documento establece protocolos exhaustivos para prevenir vulnerabilidades de seguridad en el desarrollo de plataformas que manejan datos sensibles (personales, registros, pagos, bancarios, tarjetas de crédito). Como experto en ciberseguridad, detallo riesgos comunes, medidas preventivas y mejores prácticas para elevar la seguridad al máximo.
+Este documento establece protocolos exhaustivos para prevenir vulnerabilidades de seguridad en el desarrollo de plataformas que manejan datos sensibles (personales, registros, pagos, bancarios, tarjetas de crédito). Como experto en ciberseguridad, detallo riesgos comunes, medidas preventivas y mejores prácticas para elevar la seguridad al máximo, con ejemplos prácticos y herramientas específicas. Basado en estándares como OWASP Top 10, NIST y PCI DSS.
 
 ## Introducción
 
@@ -13,6 +13,39 @@ La seguridad no es opcional; es fundamental. Una brecha puede exponer datos sens
 - **Fail-Safe Defaults**: Asume lo peor; deniega por defecto.
 - **Zero Trust**: Verifica todo, siempre.
 - **Principio de Responsabilidad Compartida**: Desarrollador, infraestructura y usuario contribuyen.
+
+**Ejemplo Práctico en Node.js con Express**:
+```javascript
+const express = require('express');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+
+const app = express();
+
+// Aplicar headers de seguridad
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+    },
+  },
+}));
+
+// Limitar tasa de solicitudes para prevenir ataques DDoS
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutos
+  max: 100, // límite de 100 solicitudes por IP
+});
+app.use(limiter);
+
+// Middleware de autenticación
+app.use((req, res, next) => {
+  // Verificar token JWT aquí
+  next();
+});
+```
 
 ## Vulnerabilidades Comunes y Prevención
 
@@ -48,6 +81,24 @@ La seguridad no es opcional; es fundamental. Una brecha puede exponer datos sens
   - Implementa rate limiting (e.g., `express-rate-limit`).
   - Almacena hashes seguros (bcrypt, Argon2) para passwords.
   - Multi-factor authentication (MFA) para accesos sensibles.
+
+**Ejemplo de Hashing Seguro en Node.js**:
+```javascript
+const bcrypt = require('bcrypt');
+
+// Hashing de password al registrar usuario
+async function hashPassword(password) {
+  const saltRounds = 12; // Recomendado: 10-14
+  const hashedPassword = await bcrypt.hash(password, saltRounds);
+  return hashedPassword;
+}
+
+// Verificación de password al login
+async function verifyPassword(password, hashedPassword) {
+  const isValid = await bcrypt.compare(password, hashedPassword);
+  return isValid;
+}
+```
 
 ### 5. Sensitive Data Exposure
 - **Descripción**: Exposición de datos sensibles en tránsito o almacenamiento.
@@ -141,11 +192,24 @@ La seguridad no es opcional; es fundamental. Una brecha puede exponer datos sens
 - **Herramientas**: Usa incident response frameworks (NIST).
 - **Post-Mortem**: Analiza y mejora.
 
+## Herramientas Recomendadas
+
+- **OWASP ZAP**: Proxy de interceptación para testing de vulnerabilidades web. Escanea automáticamente XSS, SQLi, etc. Uso: `zap.sh` para iniciar, configura proxy en navegador.
+- **Burp Suite**: Suite completa para pentesting. Community edition gratis; incluye scanner, repeater, intruder. Ideal para análisis manual de requests.
+- **fail2ban**: Monitorea logs y bloquea IPs maliciosas. Configura jails para SSH, HTTP. Ejemplo: `sudo apt install fail2ban; sudo systemctl enable fail2ban`.
+- **Wireshark**: Analiza tráfico de red para detectar fugas de datos. Filtra por protocolo (e.g., TLS).
+- **SonarQube**: SAST para detectar vulnerabilidades en código. Integra en CI/CD.
+- **Dependency-Check**: Escanea dependencias por CVEs conocidas (OWASP).
+- **bcrypt/Argon2**: Librerías para hashing seguro de passwords.
+- **Helmet**: Middleware para headers de seguridad en Express.
+- **express-rate-limit**: Limita requests para prevenir DDoS.
+
 ## Integración con Vibe Coding
 
 - En `Sandbox/Experiments/`, prueba vulnerabilidades.
 - Registra en `registro-archivos.md` archivos de seguridad.
 - Consulta `base-datos.md` para DB segura.
+- La IA debe estar alerta a potenciales fallas de seguridad o datos sensibles no contemplados inicialmente, y los incorpore al documento de manera proactiva.
 
 ## Referencias
 
