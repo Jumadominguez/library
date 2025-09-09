@@ -6,6 +6,18 @@ Estas instrucciones globales rigen el proceso de desarrollo en cualquier proyect
 
 Para mantener coherencia y facilitar la colaboración, todos los nombres de archivos, variables, funciones, clases, colecciones de bases de datos, rutas de API, mensajes de commit, etc., deben estar en inglés. Consulta `glosario.md` para traducciones comunes y ejemplos. La IA debe traducir automáticamente cualquier referencia en español al inglés para el código o archivos.
 
+## Estructura de Carpetas
+
+Para organizar el proyecto de manera modular y eficiente, utiliza las siguientes carpetas principales:
+
+- **elements/**: Almacena archivos .md específicos de cada página o componente de la aplicación. Por ejemplo, `elements/home_page.md`, `elements/user_profile.md`. Incluye descripciones detalladas, wireframes y especificaciones para cada elemento visual o funcional.
+- **process/**: Contiene scripts y archivos de automatización relacionados con el proceso de desarrollo. Por ejemplo, scripts de build, deployment, o utilidades para Vibe Coding (e.g., `process/deploy.sh`, `process/generate_mockup.py`).
+- **Sandbox/**: Entorno de experimentación, como definido en `sandbox.md`.
+- **docs/**: Documentación general, incluyendo este archivo y otros .md.
+- **tests/**: Archivos de prueba, ubicados en la raíz del proyecto.
+
+Mantén la estructura limpia y actualiza `registro-archivos.md` al agregar nuevos archivos.
+
 ## Registro de Archivos Incorporados
 
 Cada archivo incorporado al proyecto después de ser aprobado en `prototypes` debe tener un documento Markdown individual en la carpeta `docs/archivos/`. Este documento debe incluir:
