@@ -2,6 +2,10 @@
 
 Estas instrucciones globales rigen el proceso de desarrollo en cualquier proyecto utilizando el enfoque de Vibe Coding. El objetivo es mantener un entorno ordenado, eficiente y reproducible.
 
+## Regla de Nombres en Inglés
+
+Para mantener coherencia y facilitar la colaboración, todos los nombres de archivos, variables, funciones, clases, colecciones de bases de datos, rutas de API, mensajes de commit, etc., deben estar en inglés. Consulta `glosario.md` para traducciones comunes y ejemplos. La IA debe traducir automáticamente cualquier referencia en español al inglés para el código o archivos.
+
 ## Registro de Archivos Incorporados
 
 Cada archivo incorporado al proyecto después de ser aprobado en `prototypes` debe tener un documento Markdown individual en la carpeta `docs/archivos/`. Este documento debe incluir:
@@ -82,3 +86,17 @@ Mantener `proceso.md` actualizado con cada nueva feature para un registro cronol
 - Registrar descripciones y dependencias de archivos en `registro-archivos.md`.
 - Gestionar bases de datos según `base-datos.md` para conexiones seguras y arquitectura evolutiva.
 - Implementar seguridad según `seguridad.md` para prevenir vulnerabilidades en datos sensibles.
+
+## Asignación de Nombres en Inglés
+
+Para mantener coherencia y facilitar la colaboración internacional, todos los nombres utilizados en el desarrollo deben estar en inglés, independientemente del idioma en que se refiera el usuario. Esto incluye:
+
+- **Nombres de archivos**: Ej. `user_model.py` en lugar de `modelo_usuario.py`.
+- **Variables y funciones**: Ej. `user_name` en lugar de `nombre_usuario`.
+- **Colecciones en bases de datos**: Ej. `users` en lugar de `usuarios`.
+- **Clases y métodos**: Ej. `UserService` en lugar de `ServicioUsuario`.
+- **Comentarios y documentación**: Preferiblemente en inglés, salvo excepciones justificadas.
+
+Si el usuario se refiere a un término en español, la IA debe traducirlo automáticamente al inglés para asignar el nombre correspondiente. Utilizar `glosario.md` para registrar traducciones y términos clave, asegurando que cualquier inconsistencia se resuelva proactivamente.
+
+Esta regla aplica a todo el código, documentación y estructura del proyecto, promoviendo un estándar profesional y evitando confusiones lingüísticas.

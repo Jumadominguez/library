@@ -27,3 +27,25 @@ Este documento define términos clave utilizados en el proceso de desarrollo par
 - **Proceso.md**: Documento que registra el paso a paso de las fases y tareas desarrolladas después de aprobar una feature en prototypes.
 
 - **Desglose de Archivos**: Documentación individual en markdown para cada archivo incorporado, detallando su propósito, relaciones con otros archivos y cómo recrear el desarrollo.
+
+## Regla de Nombres en Inglés
+
+Para mantener coherencia y facilitar la colaboración internacional, todos los nombres de archivos, variables, funciones, clases, colecciones de bases de datos, rutas de API, etc., deben estar en inglés. Los mensajes de commit pueden permanecer en español para comodidad personal. Esto incluye:
+
+- Nombres de archivos: `user_model.py` en lugar de `modelo_usuario.py`.
+- Variables: `user_name` en lugar de `nombre_usuario`.
+- Colecciones DB: `users` en lugar de `usuarios`.
+- Funciones: `get_user_data()` en lugar de `obtener_datos_usuario()`.
+- Clases: `UserManager` en lugar de `GestorUsuario`.
+
+Si el usuario se refiere a algo en español, la IA debe traducirlo automáticamente al inglés para el código o archivos. Registrar aquí cualquier traducción necesaria para referencia futura.
+
+Ejemplos de traducciones comunes:
+- Usuario → User
+- Producto → Product
+- Pedido → Order
+- Carrito → Cart
+- Pago → Payment
+- Configuración → Settings
+- Autenticación → Authentication
+- Base de Datos → Database

@@ -12,8 +12,8 @@ MongoDB es la base de datos NoSQL predeterminada para persistencia flexible de d
 - **Evitar Conflictos**: Usa nombres únicos para bases de datos y conexiones. No uses nombres genéricos como "db".
 - **Variables de Entorno**: Almacena credenciales en archivos `.env` (ignorados en Git). Ejemplo:
   ```
-  MONGO_URI=mongodb://localhost:27017/mi_proyecto_db
-  MONGO_USER=mi_proyecto_user
+  MONGO_URI=mongodb://localhost:27017/my_project_db
+  MONGO_USER=my_project_user
   MONGO_PASSWORD=secure_password
   ```
 - **Conexión por Proyecto**: Crea una base de datos específica para cada proyecto. En MongoDB, las bases se crean automáticamente al insertar datos, pero configura usuarios:
@@ -21,7 +21,7 @@ MongoDB es la base de datos NoSQL predeterminada para persistencia flexible de d
   // En MongoDB shell
   use admin;
   db.createUser({
-    user: "mi_proyecto_user",
+    user: "my_project_user",
     pwd: "secure_password",
     roles: ["readWrite"]
   });
@@ -50,7 +50,7 @@ MongoDB es la base de datos NoSQL predeterminada para persistencia flexible de d
   # Cambios en Arquitectura MongoDB
 
   ## Fecha: [Fecha]
-  ## Cambio: [Descripción, e.g., Agregar colección 'usuarios']
+  ## Cambio: [Descripción, e.g., Agregar colección 'users']
   ## Razón: [Por qué se cambió]
   ## Impacto: [Colecciones afectadas, migraciones]
   ## Commit: [Número de commit]
@@ -60,7 +60,7 @@ MongoDB es la base de datos NoSQL predeterminada para persistencia flexible de d
 ### Mejores Prácticas
 - **Versionado**: Incluye DB en Git, pero ignora datos sensibles.
 - **Backup**: Realiza backups con `mongodump` antes de cambios.
-- **Testing**: Crea DB de test separadas (e.g., `mi_proyecto_test`).
+- **Testing**: Crea DB de test separadas (e.g., `my_project_test`).
 - **Escalabilidad**: Diseña para crecimiento (e.g., sharding, agregaciones).
 
 ## Flujo de Trabajo
