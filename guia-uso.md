@@ -1,5 +1,11 @@
-# Guía de Uso de Documentos para Iniciar Proyectos con Vibe Coding
+# Guía de Uso de Documentos para Iniciar Proyectos con Vibe Co## Referencias Cruzadas
 
+- `instrucciones-inicio.md` referencia `cuestionario-inicial.md`, `puertos.md`, `glosario.md`, `instrucciones-globales.md` y `github-instrucciones.md`.
+- `instrucciones-globales.md` incluye secciones sobre puertos, procesos y estructura modular.
+- `sandbox.md` se integra con `instrucciones-globales.md` para documentación.
+- `github-instrucciones.md` detalla el uso de Git para versionado y branches.
+- `registro-archivos.md` lista dependencias para navegación rápida.
+- `proceso-creativo.md` guía el desarrollo visual antes de código.
 Esta guía te ayuda a entender y utilizar los documentos disponibles para iniciar cualquier proyecto de manera ordenada y eficiente. Sigue el flujo recomendado para maximizar el enfoque de Vibe Coding, que prioriza la experimentación, iteración y documentación.
 
 ## Documentos Clave
@@ -15,6 +21,7 @@ Esta guía te ayuda a entender y utilizar los documentos disponibles para inicia
 - **cuestionario-inicial.md**: Cuestionario detallado con preguntas jerárquicas para recopilar información esencial antes de configurar el proyecto. Completa esto para dar instrucciones precisas a la IA.
 
 - **github-instrucciones.md**: Guía para uso eficiente de Git y GitHub, con sistema de commits y branches robusto para checkpoints y reversiones.
+- **proceso-creativo.md**: Describe el proceso visual y creativo de desarrollo, priorizando mockups antes de código.
 
 ## Flujo Recomendado para Iniciar un Proyecto
 

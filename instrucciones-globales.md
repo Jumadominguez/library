@@ -1,11 +1,6 @@
 # Instrucciones Globales para Desarrollo con Vibe Coding
 
-Estas ins## Buenas Prácticas Generales
-
-- Siempre iniciar desarrollo en `Sandbox`.
-- Usar control de versiones con Git, ignorando `Sandbox/Debug/`, `Sandbox/Temps/`, entornos virtuales y `tests/` si no es necesario. Incluir `Sandbox/Experiments/` y `Sandbox/Prototypes/` para rastrear avances.
-- Documentar cambios en commits descriptivos.
-- Revisar y limpiar `Sandbox/Temps/` semanalmente.ones globales rigen el proceso de desarrollo en cualquier proyecto utilizando el enfoque de Vibe Coding. El objetivo es mantener un entorno ordenado, eficiente y reproducible.
+Estas instrucciones globales rigen el proceso de desarrollo en cualquier proyecto utilizando el enfoque de Vibe Coding. El objetivo es mantener un entorno ordenado, eficiente y reproducible.
 
 ## Registro de Archivos Incorporados
 
@@ -70,7 +65,7 @@ Después de aprobar una nueva feature en `prototypes`, documentar el proceso com
 5. **Testing**: Ejecución de tests y validación.
 6. **Documentación**: Actualización de `docs/archivos/` y este `proceso.md`.
 
-Mantener `proceso.md` actualizado con cada nueva feature para un registro cronológico.
+Mantener `proceso.md` actualizado con cada nueva feature para un registro cronológico. Consulta `proceso-creativo.md` para el enfoque visual en desarrollo.
 
 ## Interacción con la IA
 
@@ -80,6 +75,8 @@ Mantener `proceso.md` actualizado con cada nueva feature para un registro cronol
 ## Buenas Prácticas Generales
 
 - Siempre iniciar desarrollo en `Sandbox`.
-- Usar control de versiones con Git, ignorando `Sandbox/`, entornos virtuales y `tests/` si no es necesario.
+- Mantener una estructura modular del proyecto: archivos más chicos y fácilmente identificables, en lugar de pocos archivos extensos. Esto facilita el procesamiento por parte de la IA y reduce errores en modificaciones.
+- Usar control de versiones con Git, ignorando `Sandbox/Debug/`, `Sandbox/Temps/`, entornos virtuales y `tests/` si no es necesario. Incluir `Sandbox/Experiments/` y `Sandbox/Prototypes/` para rastrear avances.
 - Documentar cambios en commits descriptivos.
-- Revisar y limpiar `Sandbox/temps/` semanalmente.
+- Revisar y limpiar `Sandbox/Temps/` semanalmente.
+- Registrar descripciones y dependencias de archivos en `registro-archivos.md`.
