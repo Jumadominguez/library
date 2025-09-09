@@ -14,6 +14,7 @@ Este documento registra las descripciones de cada archivo en el proyecto, incluy
 | puertos.md | docs/ | Registro de puertos asignados. | instrucciones-globales.md | [Fecha] |
 | guia-uso.md | docs/ | Guía para usar los documentos. | Todos los .md | [Fecha] |
 | github-instrucciones.md | docs/ | Instrucciones para Git y GitHub. | instrucciones-globales.md | [Fecha] |
+| base-datos.md | docs/ | Instructivo para manejo de bases de datos. | puertos.md, proceso-creativo.md | [Fecha] |
 | proceso-creativo.md | docs/ | Describe el proceso visual y creativo de desarrollo. | sandbox.md, instrucciones-globales.md | [Fecha] |
 | registro-archivos.md | docs/ | Registro de archivos y dependencias. | Todos los archivos del proyecto | [Fecha] |
 

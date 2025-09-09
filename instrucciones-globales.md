@@ -80,3 +80,4 @@ Mantener `proceso.md` actualizado con cada nueva feature para un registro cronol
 - Documentar cambios en commits descriptivos.
 - Revisar y limpiar `Sandbox/Temps/` semanalmente.
 - Registrar descripciones y dependencias de archivos en `registro-archivos.md`.
+- Gestionar bases de datos según `base-datos.md` para conexiones seguras y arquitectura evolutiva.
